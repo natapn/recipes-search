@@ -114,7 +114,7 @@ a {
 .labels {
   display: flex;
   flex-wrap: wrap;
-  align-self: flex-start;
+  justify-content: center;
 }
 
 .label {
@@ -206,8 +206,5 @@ a {
 @media all and (max-width: 450px) {
   input {
     width: 250px;
-  }
-  .labels {
-    justify-content: center;
   }
 }
