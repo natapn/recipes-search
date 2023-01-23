@@ -1,38 +1,213 @@
-.App {
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.bcgr {
+  object-fit: cover;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.title{
+  background-color: rgba(255, 255, 255, 0.5);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.search {
+  display: flex;
+}
+
+h1 {
+  letter-spacing: 4px;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin: 20px 0;
+}
+
+input {
+  font-family: 'Open Sans', sans-serif;
+  border: none;
+  padding: 12px 14px;
+  width: 400px;
+}
+
+button {
+  width: 46px;
+  border: none;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.dish {
+  width: 100%;
+  max-width: 300px;
+}
+
+.recipe {
+  background-color: rgba(255, 255, 255, 0.6);
+  width: 42%;
+  margin: 2%;
+}
+
+h2 {
   text-align: center;
+  margin: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.reicpe-title {
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.details {
+  display: flex;
+  width: 100%;
+  padding-bottom: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ul {
+  list-style: none;
+  padding: 0 2% 0 0;
+  margin: 0 0 16px;
+}
+
+.icon {
+  margin-right: 6px;
+}
+
+li {
+  margin-bottom: 6px;
+} 
+
+.recipe-left {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 50%;
+  padding: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.recipe-right {
+  width: 50%;
+  padding: 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+a {
+  font-size: 18px;
+  font-weight: bolder;
+}
+
+.labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
+.label {
+  margin: 4px;
+  padding: 4px;
+}
+
+.sugar {
+  background-color: aquamarine;
+}
+
+.keto {
+  background-color: yellow;
+}
+
+.vegan {
+  background-color: yellowgreen;
+}
+
+.gluten {
+  background-color: palevioletred;
+}
+
+@media all and (max-width: 1050px) {
+  h1 {
+    font-size: 30px;
   }
-  to {
-    transform: rotate(360deg);
+  h2 {
+    font-size: 20px;
+  }
+  .details {
+    flex-direction: column;
+  }
+  .recipe-left, .recipe-right {
+    width: 90%;
+    align-self: center;
+  }
+}
+@media all and (max-width: 800px) {
+  h1 {
+    font-size: 20px;
+  }
+  input {
+    width: 300px;
+  }
+  h2 {
+    font-size: 16px;
+  }
+  li {
+    font-size: 14px;
+  }
+} 
+@media all and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+  input {
+    width: 220px;
+  }
+  .recipe {
+    width: 90%;
+    align-self: center;
+  }
+  .labels {
+    align-self: center;
+  }
+  .recipe-right {
+    width: 60%;
+  }
+}
+@media all and (max-width: 650px) {
+  .title {
+    flex-direction: column;
+  }
+  input {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+  button {
+    height: 42px;
+  }
+  h2 {
+    margin: 0 10px;
+  }
+  a, .label, .recipe-left p {
+    font-size: 14px;
+  }
+}
+@media all and (max-width: 450px) {
+  input {
+    width: 250px;
+  }
+  .labels {
+    justify-content: center;
   }
 }
