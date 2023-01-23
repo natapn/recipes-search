@@ -39,7 +39,7 @@ function App() {
           <form onSubmit={finalSearch}>
             <input placeholder="Search..." onChange={myRecipeSearch} value={mySearch}></input>
           </form>
-          <button><img src="https://img.icons8.com/laces/512/fry.png" alt="icon" width="26px"/></button>
+          <button onClick={finalSearch}><img src="https://img.icons8.com/laces/512/fry.png" alt="icon" width="26px"/></button>
         </div>
       </div>
       <div className="container">
