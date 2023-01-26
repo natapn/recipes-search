@@ -20,8 +20,9 @@ body {
   margin-bottom: 30px;
 }
 
-.search {
+form {
   display: flex;
+  justify-content: center;
 }
 
 h1 {

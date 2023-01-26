@@ -35,12 +35,10 @@ function App() {
       <img src={bcgr} alt="bcgr" className="bcgr"/>
       <div className="title">
         <h1>Find a recipe</h1>
-        <div className="search">
-          <form onSubmit={finalSearch}>
-            <input placeholder="Search..." onChange={myRecipeSearch} value={mySearch}></input>
-          </form>
-          <button onClick={finalSearch}><img src="https://img.icons8.com/laces/512/fry.png" alt="icon" width="26px"/></button>
-        </div>
+        <form onSubmit={finalSearch}>
+          <input placeholder="Search..." onChange={myRecipeSearch} value={mySearch}></input>
+          <button><img src="https://img.icons8.com/laces/512/fry.png" alt="icon" width="26px"/></button>
+        </form>
       </div>
       <div className="container">
         {myRecipes.map((element, index) => (
