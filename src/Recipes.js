@@ -17,7 +17,7 @@ function Recipes({element}) {
                                     <p key={index} className={item.class + " label"}>{"• " + item.label}</p>
                                 )
                             }
-                            return undefined;
+                            return null;
                         })}
                     </div>
                 </div>
